@@ -19,6 +19,6 @@ public abstract class Interactable : MonoBehaviour
 
     protected virtual void Interact()
     {
-
-    }
+        // There Will Be No Code Here...
+    } 
 }
