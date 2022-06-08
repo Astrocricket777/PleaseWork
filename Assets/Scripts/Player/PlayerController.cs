@@ -25,11 +25,13 @@ public class PlayerController : MonoBehaviour
     CharacterController Controller = null;
 
 
+
     Vector2 CurrentDirection = Vector2.zero;
     Vector2 CurrentDirectionVelocity = Vector2.zero;
 
     Vector2 CurrentMouseDelta = Vector2.zero;
     Vector2 CurrentMouseDeltaVelocity = Vector2.zero;
+
 
 
     // Start is called before the first frame update
@@ -45,10 +47,12 @@ public class PlayerController : MonoBehaviour
         Controller = GetComponent<CharacterController>();
     }
 
+
+
     // Update is called once per frame
     void Update()
     {
-
+        //calling the functions everyframe
         UpdateMouseLook();
         UpdateMovement();
         Sprint();
@@ -105,13 +109,15 @@ public class PlayerController : MonoBehaviour
 
     void Sprint()
     {
+        //If Leftshift is held down the player will increase speed and sprint
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            WalkSpeed = 10f;
+            WalkSpeed = 6f;
         }
+        //If the Leftshift is lifted up the player will decrese speed and walk
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
-            WalkSpeed = 6f;
+            WalkSpeed = 3f;
         }
     }
 }
