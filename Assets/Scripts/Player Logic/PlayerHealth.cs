@@ -11,6 +11,8 @@ public class PlayerHealth : MonoBehaviour
 
     private TMP_Text text;
 
+    [HideInInspector] public bool dead;
+
     private void Start()
     {
         //Finds the Health Text UI element contained in the SceneHolders Script
@@ -21,6 +23,8 @@ public class PlayerHealth : MonoBehaviour
 
     private void Update()
     {
+        if(Health <= 0)
+        { dead = true; }
 
         //Updates The Health Text UI Element
         text.text = Health.ToString();
