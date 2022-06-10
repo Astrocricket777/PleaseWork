@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerLook : MonoBehaviour
 {
     public Camera cam;
+
+    public GameObject deathText;
     private float xRotation = 0f;
 
     public float xSensitivity = 30f;
@@ -27,6 +29,7 @@ public class PlayerLook : MonoBehaviour
         {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+            deathText.SetActive(true);
         }
         else if (!health.dead)
         {
@@ -35,7 +38,6 @@ public class PlayerLook : MonoBehaviour
         }
     }
 
-    // The PLayer Can't Look Around Because Your Not Calling The Method Anywhere, Looks Like You Need To Call It In The Update Then Give It A Vector 2 As An Argument.
     public void ProcessLook(Vector2 input)
     {
         if (!health.dead)

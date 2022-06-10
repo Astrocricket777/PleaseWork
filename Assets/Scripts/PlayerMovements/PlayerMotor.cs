@@ -53,8 +53,6 @@ public class PlayerMotor : MonoBehaviour
     }
 
     //recieve the inputs for our InputManger.cs and apply them to our character controller. 
-
-    // Looks Like The Same Thing Here As PlayerLook.cs, You Need To Somehow Call It With A Vector2 As It's Argument.
     public void ProcessMove(Vector2 input)
     {
         if (!health.dead)

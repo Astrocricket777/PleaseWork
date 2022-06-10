@@ -202,6 +202,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHealth: 100
   Health: 0
+  text: {fileID: 0}
+  dead: 0
 --- !u!114 &4377960721777895122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -215,8 +217,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  gravity: -9.8
-  jumpHeight: 3
+  gravity: -28
+  jumpHeight: 1.5
 --- !u!114 &3666912714306980122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -230,6 +232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 2569574154730747213}
+  deathText: {fileID: 8336582420730248184, guid: 56b18ca9b40c8124985499b8855ffa64, type: 3}
   xSensitivity: 30
   ySensitivity: 30
 --- !u!114 &5724466408791721300
