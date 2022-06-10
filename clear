@@ -1,0 +1,166 @@
+[33mcommit bd750d9412eed9d506b28fb6afdf8ee73483802c[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: FGamerYT <97650837+FGamerYT@users.noreply.github.com>
+Date:   Thu Jun 9 22:54:47 2022 -0400
+
+    Death GUi & More (Read Desc.)
+    
+    When you die a GUI pops up with a respawn button that does not work yet. I also added cubes to give you better perception while testing the game. Lastly I made the jumping more realistic so you don't jump super high and the gravity is more realistic.
+
+[33mcommit 12eb30e96c0e4dfc537a2e579b1040d86847d991[m
+Author: Astrocricket777 <AstrocricketGaming@gmail.com>
+Date:   Wed Jun 8 16:07:20 2022 -0500
+
+    Added Text To The Health So We Have A Visual Representation For It.
+
+[33mcommit 2eb3ec01ecb8234c9f7baa2405d225a16e6856b4[m
+Author: Astrocricket777 <AstrocricketGaming@gmail.com>
+Date:   Wed Jun 8 14:49:35 2022 -0500
+
+    Commented For Some Errors.
+    
+    I Noticed Some Errors And Commented About Them In The PlayerLook.cs And The PlayerMotor.cs :)
+
+[33mcommit b23e540d57c581e8f8401ea395d40c2b64164be1[m
+Merge: 53a7df3 d075870
+Author: Astrocricket777 <AstrocricketGaming@gmail.com>
+Date:   Wed Jun 8 14:32:15 2022 -0500
+
+    Commited All
+
+[33mcommit 53a7df3629da20c675f319f277d32a4c3349b88c[m
+Author: Astrocricket777 <AstrocricketGaming@gmail.com>
+Date:   Wed Jun 8 14:30:34 2022 -0500
+
+    First Look
+
+[33mcommit d075870a8e54c18951470786f523ce0e11c8d0f9[m
+Author: NoahVanilla <kaichristensen06@gmail.com>
+Date:   Wed Jun 8 02:09:20 2022 -0400
+
+    Death State Base Architecture
+    
+    Locks Movement and Looking on health falling below or becoming equivalent to zero
+
+[33mcommit bf9be73059c17664e8c033579c5a23681a1bd8e6[m
+Author: NoahVanilla <kaichristensen06@gmail.com>
+Date:   Wed Jun 8 01:50:17 2022 -0400
+
+    Scene changes
+    
+    Scene changes
+
+[33mcommit a80b05631093257ef80411281374e49a148a016f[m
+Author: NoahVanilla <kaichristensen06@gmail.com>
+Date:   Wed Jun 8 01:47:19 2022 -0400
+
+    Cleaning Up Console
+    
+    Cleaning Up Console
+
+[33mcommit 3a9cd9df7c17919e6cda72a7ab479970db61de30[m
+Author: NoahVanilla <kaichristensen06@gmail.com>
+Date:   Wed Jun 8 01:45:27 2022 -0400
+
+    Prevented a Catastrophe also movement
+    
+    yay new scene, ok it is Like 2AM Does anyone even read these AAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+[33mcommit c783a4298d0d37937aa31a804959e80868b6cd9c[m
+Merge: feadff1 917b3fb
+Author: NoahVanilla <kaichristensen06@gmail.com>
+Date:   Wed Jun 8 01:27:17 2022 -0400
+
+    Merge branch 'main' of https://github.com/Astrocricket777/PleaseWork
+
+[33mcommit feadff1a5b14aa5b88963bcebf4d92e14a4c0767[m
+Author: NoahVanilla <kaichristensen06@gmail.com>
+Date:   Wed Jun 8 01:23:20 2022 -0400
+
+    Revert "Idek"
+    
+    This reverts commit 9361738d3b4ba0a38fa6c3ec41dd1c089c9ea73e, reversing
+    changes made to 506cf3ac8f5db1c2f564c4c26983e2f90c2f2b63.
+
+[33mcommit 917b3fb52cdb409865f8f816702d614db9da522e[m
+Author: FGamerYT <97650837+FGamerYT@users.noreply.github.com>
+Date:   Wed Jun 8 01:22:35 2022 -0400
+
+    Revert "Idek"
+    
+    This reverts commit 9361738d3b4ba0a38fa6c3ec41dd1c089c9ea73e, reversing
+    changes made to 506cf3ac8f5db1c2f564c4c26983e2f90c2f2b63.
+
+[33mcommit a5bda6ab5a9c3e3416af771a89800f312bf11294[m
+Author: NoahVanilla <kaichristensen06@gmail.com>
+Date:   Wed Jun 8 01:12:45 2022 -0400
+
+    Health Base
+    
+    Added Player Health And SceneHolders Script
+
+[33mcommit 9361738d3b4ba0a38fa6c3ec41dd1c089c9ea73e[m
+Merge: 506cf3a d4c2e52
+Author: FGamerYT <97650837+FGamerYT@users.noreply.github.com>
+Date:   Wed Jun 8 01:11:36 2022 -0400
+
+    Idek
+    
+    stupid
+
+[33mcommit 506cf3ac8f5db1c2f564c4c26983e2f90c2f2b63[m
+Author: FGamerYT <97650837+FGamerYT@users.noreply.github.com>
+Date:   Wed Jun 8 01:09:11 2022 -0400
+
+    Player Basics Complete
+    
+    Fixed the player movement!! You can now use controller as well. It smooth and runs great.
+
+[33mcommit d4c2e52b0f84bc6fb2fae033dd43afaf4f0b8825[m
+Author: NoahVanilla <kaichristensen06@gmail.com>
+Date:   Tue Jun 7 23:50:11 2022 -0400
+
+    a
+    
+    a
+
+[33mcommit 76ed7fce4be6d9a7d7dabede1657ea49b37714ce[m
+Author: NoahVanilla <kaichristensen06@gmail.com>
+Date:   Tue Jun 7 23:47:15 2022 -0400
+
+    Added Universal Render Pipeline
+    
+    Added the Universal Render Pipeline to the project to allow for more advanced lighting and Shaders to be used.
+
+[33mcommit caa1aad0226ccfd3e7cf3ee78970a9aa62c4946a[m
+Author: FGamerYT <97650837+FGamerYT@users.noreply.github.com>
+Date:   Tue Jun 7 22:33:31 2022 -0400
+
+    New change for movement
+    
+    I added a capsule with a plane and fps movement with looking.
+
+[33mcommit 35789677e534ccd721b0aef05632798e737493b6[m
+Author: Astrocricket777 <AstrocricketGaming@gmail.com>
+Date:   Tue Jun 7 17:30:08 2022 -0500
+
+    Added Small Comment In The Interactable.cs
+
+[33mcommit ad6110befda4ab459f266a132a5d3cf21a158766[m
+Author: OtherTestAcount <Joebiden777777777@gmail.com>
+Date:   Tue Jun 7 15:23:55 2022 -0500
+
+    Test
+    
+    Made Some Test Changes To The Readme.md
+
+[33mcommit 2264e9391daf0320be9b8757901269aa7fde060f[m
+Author: unknown <AstrocricketGaming@gmail.com>
+Date:   Tue Jun 7 14:31:46 2022 -0500
+
+    Removed Inventory From The Whole Project
+
+[33mcommit 5deb9f598ee2ccf41ad284cb6b7d0b163b4f6a63[m
+Author: unknown <AstrocricketGaming@gmail.com>
+Date:   Tue Jun 7 02:01:23 2022 -0500
+
+    Initial commit
