@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class Keypad : Interactable
 {
-    public PlayerHealth health;
+    private PlayerHealth health;
+    void Start()
+    {
+        health = GetComponent<PlayerHealth>();
+    }
    
     protected override void Interact()
     {
         Debug.Log("Interacted With " + gameObject.name);
-        health.Damage(5);
+        //Put what you want to happen after the interaction here
     }
 }

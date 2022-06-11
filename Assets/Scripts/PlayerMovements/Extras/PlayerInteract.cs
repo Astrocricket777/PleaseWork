@@ -4,10 +4,19 @@ using UnityEngine;
 
 public class PlayerInteract : MonoBehaviour
 {
-    [SerializeField] private Camera Cam;
-    [SerializeField] private float Distance = 3f;
+    private Camera cam;
+    [SerializeField] private float distance = 3f;
     [SerializeField] private LayerMask mask;
-    [SerializeField] private PlayerUI playerUI;
+    private PlayerUI playerUI;
+
+    private InputManager inputManager;
+
+    void Start() 
+    {
+        cam = GetComponent<PlayerLook>().cam;
+        playerUI = GetComponent<PlayerUI>();
+        inputManager = GetComponent<InputManager>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -18,25 +27,25 @@ public class PlayerInteract : MonoBehaviour
         RaycastHit hitinfo;
 
         // Getting The Position Of The Camera And The Forward Vector.
-        Ray ray = new Ray(Cam.transform.position, Cam.transform.forward);
+        Ray ray = new Ray(cam.transform.position, cam.transform.forward);
 
         // Drawing A Visual Representation Of the Raycast.
-        Debug.DrawRay(ray.origin, ray.direction * Distance);
+        Debug.DrawRay(ray.origin, ray.direction * distance);
 
         // Shooting A Ray From The Camera Storing The Data From The Object That We Hit In The "hitinfo" Variable.
-        if (Physics.Raycast(ray, out hitinfo, Distance, mask))
+        if (Physics.Raycast(ray, out hitinfo, distance, mask))
         {
             // If The Object That We Hit Has The "Interactable" Script Then Run The Script Inside Of This If Statement.
             if (hitinfo.collider.GetComponent<Interactable>() != null)
             {
                 // Making A Variable For The interactable that we hit.
-                Interactable interactable = hitinfo.collider.GetComponent<Interactable>();
+                 Interactable interactable = hitinfo.collider.GetComponent<Interactable>();
 
                 // Debuging The Prompt Message From The Interactable Object We Hit!
-                playerUI.UpdateText(interactable.PromptMessage);
+                playerUI.UpdateText(interactable.promptMessage);
 
                 // If We Press Down "F" While Looking At An Interactable, Then Run The Script Inside Of This Statement.
-                if (Input.GetKeyDown(KeyCode.F))
+                if (inputManager.onFoot.Interact.triggered)
                 {
                     // This Will run The BaseInteract Method Which Inherits to Any Script Inheriting The Script.
                     interactable.BaseInteract();

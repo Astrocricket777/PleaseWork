@@ -4,21 +4,22 @@ using UnityEngine;
 
 public abstract class Interactable : MonoBehaviour
 {
-    public bool UseEvents;
-    public string PromptMessage;
+    //public bool UseEvents;
+    public string promptMessage;
+
 
     public void BaseInteract()
     {
-        if (UseEvents)
-        {
-            GetComponent<InteractionEvent>().OnInteract.Invoke();
-        }
+        //if (Event)
+         //{
+           //GetComponent<InteractionEvent>().OnInteract.Invoke();
+         //}
 
         Interact();
     }
 
     protected virtual void Interact()
     {
-        // There Will Be No Code Here...
+        // There Will Be No Code Here... Yet...
     } 
 }
