@@ -20,7 +20,7 @@ public class PlayerHealth : MonoBehaviour
     
         Health = MaxHealth;
 
-        Health = Mathf.Clamp(Health, 0, 100);
+        Health = Mathf.Clamp(Health, 0, MaxHealth);
     }
 
     private void Update()
