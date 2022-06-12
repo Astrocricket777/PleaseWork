@@ -26,7 +26,9 @@ public class PlayerHealth : MonoBehaviour
     private void Update()
     {
         if(Health <= 0)
-        { dead = true; }
+        {
+            dead = true;
+        }
 
         //Updates The Health Text UI Element
         text.text = Health.ToString();
