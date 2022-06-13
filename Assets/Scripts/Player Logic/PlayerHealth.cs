@@ -6,7 +6,7 @@ using TMPro;
 public class PlayerHealth : MonoBehaviour
 {
 
-    [SerializeField] int MaxHealth;
+     public int MaxHealth;
      public int Health;
 
     [SerializeField] private TMP_Text text;

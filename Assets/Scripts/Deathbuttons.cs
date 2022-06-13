@@ -6,6 +6,9 @@ public class Deathbuttons : MonoBehaviour
 {
 
     public GameObject deathGui;
+    public GameObject player;
+
+    public Transform RespawnPosition;
 
     public PlayerHealth health;
     // Start is called before the first frame update
@@ -23,10 +26,13 @@ public class Deathbuttons : MonoBehaviour
     public void Deathrespawn()
     {
         health.dead = false;
+        health.Health = health.MaxHealth;
         
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
         deathGui.SetActive(false);
+
+        player.transform.position = RespawnPosition.position;
     }
 }

@@ -12,15 +12,13 @@ public class PlayerLook : MonoBehaviour
     public float xSensitivity = 30f;
     public float ySensitivity = 30f;
 
-    PlayerHealth health;
+    public PlayerHealth health;
     
 
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-
-        health = GetComponent<PlayerHealth>();
     }
 
     private void Update()
